@@ -61,9 +61,10 @@ class ResultPage extends StatelessWidget {
               ),
             ),
           ),
-          ButtonWidget(text: 'Rate us 5 Stars.', onClicked: (){
+          ButtonWidget(text: 'click here', onClicked: (){
             final text1 = 'Thank you !';
-            final snackBar = SnackBar(content: Text(text1));
+            final snackBar = SnackBar(content: Center(child: Container (child: Text(text1,style: TextStyle(fontStyle: FontStyle.italic,fontSize: 50),),)));
+
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           },),
           BottomButton(
